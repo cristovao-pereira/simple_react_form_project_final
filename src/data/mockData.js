@@ -1,4 +1,5 @@
 // src/data/mockData.js
+
 export let students = [
   {
     id: 1,
@@ -17,9 +18,23 @@ export let students = [
 
 export let permissions = [
   { id: 1, name: "admin", description: "Acesso total ao sistema" },
-  { id: 2, name: "leitura", description: "Apenas visualizar dados" }
+  { id: 2, name: "leitura", description: "Apenas visualizar dados" },
+  { id: 3, name: "professor", description: "Editar notas e alunos" }
 ]
 
+export let users = [
+  {
+    id: 1,
+    userName: "João Silva",
+    userEmail: "joao@escola.com",
+    userAddress: "Rua das Flores, 123 - São Paulo, SP",
+    userPhoneNumber: "(11) 98765-4321",
+    userBirthDate: "1985-03-15",
+    userRole: "admin"
+  }
+]
+
+// Funções de CRUD
 export const saveStudent = (student) => students.push(student)
 export const updateStudent = (updated) => {
   students = students.map(s => s.id === updated.id ? updated : s)
