@@ -1,0 +1,96 @@
+/* src/styles/table.css */
+.table-container {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  margin-top: 1.5rem;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.table-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #166534;
+}
+
+.btn-new {
+  background: #16a34a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(22,163,74,.3);
+  transition: all 0.2s ease;
+}
+
+.btn-new:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background: #ecfdf5;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #166534;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table td {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  font-size: 1rem;
+}
+
+.table tr:hover {
+  background: #f0fdf4;
+}
+
+.badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.action-link {
+  color: #2563eb;
+  text-decoration: none;
+  margin-right: 0.75rem;
+  font-weight: 500;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.action-delete {
+  color: #dc2626;
+}
