@@ -1,16 +1,50 @@
-# React + Vite
+# Sistema Escolar - Cadastro de Alunos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um sistema web completo para **gerenciamento de alunos e permissões**, desenvolvido em **React + Vite**. Ideal para escolas, cursos ou instituições de ensino.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## React Compiler
+- **Cadastro e Edição de Alunos**  
+  - Nome, matrícula, notas, semestre, curso  
+  - Cálculo automático de **média final** e **situação** (Aprovado/Reprovado)  
+  - Seleção múltipla de disciplinas  
+  - Status ativo/inativo com switch  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Listagem de Alunos**  
+  - Tabela responsiva com filtros visuais  
+  - Badges coloridos para situação  
+  - Ações: Editar / Excluir  
 
-## Expanding the ESLint configuration
+- **Gerenciamento de Permissões**  
+  - Criar, listar e visualizar permissões  
+  - Base para sistema de roles (admin, leitura, etc.)  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Navegação Intuitiva**  
+  - Home com acesso rápido  
+  - Rotas com `react-router-dom`  
+
+---
+
+## Tecnologias
+
+- **React 18** + **Vite**  
+- **React Router DOM** (navegação)  
+- **CSS Puro** (sem Tailwind, sem dependências externas)  
+- **Mock Data** (simulação de backend)  
+
+---
+
+## Como Rodar
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/cristovao-pereira/simple_react_form_project_final
+cd simple_react_form_project_final
+
+# 2. Instale as dependências
+npm install
+
+# 3. Inicie o servidor
+npm run dev
