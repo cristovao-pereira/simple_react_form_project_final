@@ -53,7 +53,22 @@ export default function Home() {
         >
           Gerenciar Permissões
         </Link>
-        
+        <Link
+          to="/usuarios"
+          style={{
+            background: '#ad32d3ff',
+            color: 'white',
+            padding: '1rem 2.5rem',
+            borderRadius: '12px',
+            textDecoration: 'none',
+            fontWeight: '600',
+            fontSize: '1.2rem',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
+          }}
+        >
+          Gerenciar Usuários
+        </Link>
+
       </div>
     </div>
   )
