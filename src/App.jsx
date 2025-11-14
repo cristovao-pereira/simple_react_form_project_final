@@ -12,6 +12,8 @@ import UserShowPage from "./pages/Users/UserShowPage"
 import UserForm from "./pages/Users/UserForm"
 import IndicatorList from "./components/IndicatorList"
 import IndicatorsShowPage from "./pages/Indicators/IndicatorsShowPage"
+import UnitList from "./components/UnitList"
+import UnitsShowPage from "./pages/Units/UnitsShowPage"
 
 export default function App() {
   return (
@@ -43,6 +45,10 @@ export default function App() {
           {/* INDICADORES */}
           <Route path="/indicadores" element={<IndicatorList />} />
           <Route path="/indicadores/:id" element={<IndicatorsShowPage />} />
+
+          {/* Unidades */}
+          <Route path="/unidades" element={<UnitList />} />
+          <Route path="/unidades/:id" element={<UnitsShowPage />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

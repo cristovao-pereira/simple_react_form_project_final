@@ -67,6 +67,24 @@ export let permissions = [
   { id: 3, name: "professor", description: "Editar notas e alunos" }
 ]
 
+export let units = [
+  {
+    id: 1,
+    UnitName: "Unidade Matriz",
+    UnitDescription: "Sede principal da rede escolar.\nLocalizada no centro da cidade.\nCapacidade: 800 alunos.\nInaugurada em 2010."
+  },
+  {
+    id: 2,
+    UnitName: "Filial Zona Sul",
+    UnitDescription: "Unidade moderna com foco em tecnologia.\nPossui laboratório de robótica, sala maker e auditório.\nCapacidade: 500 alunos."
+  },
+  {
+    id: 3,
+    UnitName: "Campus Universitário",
+    UnitDescription: "Parceria com universidade local.\nCursos técnicos e graduação.\nÁrea de 12.000 m²."
+  }
+]
+
 
 
 // Funções de CRUD

@@ -140,6 +140,33 @@ export default function Home() {
           >
             Indicadores
           </Link>
+
+          <Link
+            to="/unidades"
+            style={{
+              display: 'block',
+              backgroundColor: '#8b5cf6',
+              color: 'white',
+              padding: '2rem',
+              borderRadius: '1rem',
+              textAlign: 'center',
+              fontSize: '1.25rem',
+              fontWeight: '600',
+              textDecoration: 'none',
+              boxShadow: '0 10px 25px rgba(139,92,246,0.25)',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseEnter={e => {
+              e.currentTarget.style.backgroundColor = '#7c3aed'
+              e.currentTarget.style.transform = 'translateY(-4px)'
+            }}
+            onMouseLeave={e => {
+              e.currentTarget.style.backgroundColor = '#8b5cf6'
+              e.currentTarget.style.transform = 'translateY(0)'
+            }}
+          >
+            Gerenciar Unidades
+          </Link>
         </div>
       </div>
     </div>
