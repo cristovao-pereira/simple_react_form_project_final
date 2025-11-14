@@ -5,9 +5,169 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
-  height: 100%;
-  font-family: system-ui, -apple-system, sans-serif;
-  background: #f1f8f5;
-  color: #1e293b;
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+  color: #1f2937;
+  min-height: 100vh;
+}
+
+/* CARD PADRÃO */
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  overflow: hidden;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+/* TÍTULO PADRÃO */
+.page-title {
+  font-size: 2.125rem;
+  font-weight: 700;
+  color: #166534;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* LABEL */
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* INPUT & TEXTAREA */
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  background: #f9fafb;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #16a34a;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(22,163,74,0.15);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.form-hint {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 0.5rem;
+}
+
+/* BOTÕES PADRÃO */
+.btn {
+  padding: 0.875rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-primary {
+  background: #16a34a;
+  color: white;
+  box-shadow: 0 4px 12px rgba(22,163,74,0.3);
+}
+
+.btn-primary:hover {
+  background: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  background: #d1d5db;
+}
+
+/* TABELA */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.table th {
+  background: #ecfdf5;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #166534;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.5px;
+}
+
+.table td {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.table tr:hover {
+  background: #f0fdf4;
+}
+
+/* BADGES */
+.badge {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-success { background: #d1fae5; color: #065f46; }
+.badge-danger { background: #fee2e2; color: #991b1b; }
+
+/* AÇÕES */
+.action-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.action-link:hover {
+  text-decoration: underline;
+}
+
+.action-delete {
+  color: #dc2626;
+}
+
+/* src/styles/global.css */
+
+/* DETALHES - CAMPOS */
+.bg-gray-50 {
+  background-color: #f9fafb;
+}
+
+.border {
+  border: 1px solid #e5e7eb;
+}
+
+.rounded-xl {
+  border-radius: 12px;
 }

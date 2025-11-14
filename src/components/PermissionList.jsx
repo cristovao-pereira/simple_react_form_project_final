@@ -1,24 +1,24 @@
 // src/components/PermissionList.jsx
 import { useNavigate } from "react-router-dom"
-import { permissions } from "../data/mockData"  // ← CORRIGIDO!
-import "../styles/table.css"
+import { permissions } from "../data/mockData"
+import "../styles/global.css"  // ← ESTILO GLOBAL
 
 export default function PermissionList() {
   const navigate = useNavigate()
 
   return (
-    <div className="p-6">
-      <div className="table-header">
-        <h1 className="table-title">Permissões do Sistema</h1>
+    <div className="card">
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="page-title">Permissões do Sistema</h1>
         <button
           onClick={() => navigate("/permissoes/nova")}
-          className="btn-new"
+          className="btn btn-primary"
         >
           + Nova Permissão
         </button>
       </div>
 
-      <div className="table-container">
+      <div className="overflow-x-auto">
         <table className="table">
           <thead>
             <tr>
