@@ -46,6 +46,21 @@ export let users = [
   }
 ]
 
+export let indicators = [
+  {
+    id: 1,
+    Name: "Taxa de Aprovação",
+    Dimension: "Desempenho Acadêmico",
+    Description: "Percentual de alunos aprovados em relação ao total matriculado no semestre.\nFórmula: (Aprovados / Matriculados) × 100"
+  },
+  {
+    id: 2,
+    Name: "Satisfação do Aluno",
+    Dimension: "Qualidade de Ensino",
+    Description: "Média das avaliações dos alunos sobre a experiência educacional.\nEscala: 0 a 10"
+  }
+]
+
 export let permissions = [
   { id: 1, name: "admin", description: "Acesso total ao sistema" },
   { id: 2, name: "leitura", description: "Apenas visualizar dados" },

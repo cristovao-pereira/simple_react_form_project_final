@@ -8,8 +8,10 @@ import PermissionList from "./components/PermissionList"
 import NewPermission from "./pages/Permissions/NewPermission"
 import PermissionDetails from "./pages/Permissions/PermissionDetails"
 import UserList from "./components/UserList"
-import UserShowPage from "./pages/Users/UserShowPage"  
+import UserShowPage from "./pages/Users/UserShowPage"
 import UserForm from "./pages/Users/UserForm"
+import IndicatorList from "./components/IndicatorList"
+import IndicatorsShowPage from "./pages/Indicators/IndicatorsShowPage"
 
 export default function App() {
   return (
@@ -21,7 +23,7 @@ export default function App() {
       <main className="container mx-auto p-6">
         <Routes>
           <Route path="/" element={<Home />} />
-          
+
           {/* Alunos */}
           <Route path="/alunos" element={<StudentList />} />
           <Route path="/alunos/novo" element={<NewStudent />} />
@@ -37,6 +39,10 @@ export default function App() {
           <Route path="/usuarios/:id" element={<UserShowPage />} />
           <Route path="/usuarios/novo" element={<UserForm />} />
           <Route path="/usuarios/editar/:id" element={<UserForm />} />
+
+          {/* INDICADORES */}
+          <Route path="/indicadores" element={<IndicatorList />} />
+          <Route path="/indicadores/:id" element={<IndicatorsShowPage />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
